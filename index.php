@@ -27,10 +27,17 @@ require_once("config.php");
 //$aluno->insert();
 //echo $aluno;
 
+//alterar um usuario
+//$usuario = new Usuario();
+//$usuario->loadbyId(8);
+//$usuario->update("professor", "!@#$%¨&*");
+//echo $usuario;
+
+//deletar um usuario
 $usuario = new Usuario();
 $usuario->loadbyId(8);
-$usuario->update("professor", "!@#$%¨&*");
-
+$usuario->delete();
 echo $usuario;
+
 
 ?>
